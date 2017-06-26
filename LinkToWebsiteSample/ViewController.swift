@@ -20,6 +20,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func btn_github_Clicked(_ sender: Any) {
+        
+        let url = URL(string:"https://www.github.com")
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+        
+    }
+    
+    
+    @IBAction func btn_gitlab_Clicked(_ sender: Any) {
+        
+        let url = URL(string:"https://about.gitlab.com/")
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+        
+    }
+    
 
 }
 
